@@ -1,0 +1,51 @@
+{
+  "name": "eslint-config-webcube",
+  "version": "0.1.0-alpha.1",
+  "description": "eslint configuration for projects based on webcube/nodecube ",
+  "author": "dexteryy <dexter.yy@gmail.com>",
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/dexteryy/eslint-config-webcube/issues"
+  },
+  "homepage": "https://github.com/dexteryy/eslint-config-webcube",
+  "repository": "https://github.com/dexteryy/eslint-config-webcube",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "update": "rm -rf ./node_modules && npm i",
+    "upgrade": "rm -rf ./node_modules package-lock.json && npm i"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "peerDependencies": {
+    "eslint": "^4.5.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.3.0",
+    "jsonfile": "^3.0.1",
+    "strip-json-comments": "^2.0.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^4.5.0",
+    "husky": "^0.13.3"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "webcube",
+    "nodecube"
+  ]
+}
