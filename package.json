@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webcube",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-beta.1",
   "description": "eslint configuration for projects based on webcube/nodecube ",
   "author": "dexteryy <dexter.yy@gmail.com>",
   "contributors": [],
@@ -12,35 +12,45 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
+    "precommit": "npm run check",
+    "check": "check-dependencies && eslint-find-rules --unused .eslintrc.json",
+    "stat": "eslint-index .eslintrc.json --format table",
     "update": "rm -rf ./node_modules && npm i",
     "upgrade": "rm -rf ./node_modules package-lock.json && npm i"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   },
   "engines": {
     "node": ">=6"
   },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    }
+  },
   "peerDependencies": {
-    "eslint": "^4.5.0"
+    "eslint": "^4.7.0"
   },
   "dependencies": {
-    "babel-eslint": "^7.2.3",
-    "eslint-config-airbnb": "^15.1.0",
+    "babel-eslint": "^8.0.0",
+    "eslint-config-prettier": "^2.5.0",
     "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-flowtype": "^2.35.0",
+    "eslint-plugin-eslint-comments": "^1.0.3",
+    "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
-    "jsonfile": "^3.0.1",
+    "prettier": "^1.7.0",
     "strip-json-comments": "^2.0.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^4.5.0",
-    "husky": "^0.13.3"
+    "babel-eslint": "^8.0.0",
+    "check-dependencies": "^1.1.0",
+    "eslint": "^4.7.0",
+    "eslint-find-rules": "^3.1.1",
+    "eslint-index": "^1.4.0",
+    "husky": "^0.14.3"
   },
   "keywords": [
     "eslint",
