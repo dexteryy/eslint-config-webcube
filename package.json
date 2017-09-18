@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-webcube",
   "version": "0.1.0-beta.1",
-  "description": "eslint configuration for projects based on webcube/nodecube ",
+  "description": "A sharable ESLint presets which explicitly configures all-available rules (guaranteed by scripts) from ESLint and commonly used plugins.",
   "author": "dexteryy <dexter.yy@gmail.com>",
   "contributors": [],
   "bugs": {

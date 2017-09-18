@@ -13,7 +13,7 @@
 [dep-url]: https://david-dm.org/dexteryy/eslint-config-webcube
 [greenkeeper-image]: https://badges.greenkeeper.io/dexteryy/eslint-config-webcube.svg
 
-A sharable ESLint presets which explicitly configures all-available rules (guaranteed by [scripts](https://github.com/dexteryy/eslint-config-webcube/blob/master/package.json#L16)) from ESLint and commonly used plugins.
+A sharable ESLint presets which explicitly configures all-available rules (guaranteed by [scripts](https://github.com/dexteryy/eslint-config-webcube/blob/master/package.json#L16)) from ESLint and commonly used plugins (see [Spellbook of Modern Web Dev > Toolchain](https://github.com/dexteryy/spellbook-of-modern-webdev#toolchain) > Static Analysis). It's closely compatible with [Airbnb's code style](https://github.com/airbnb/javascript).
 
 ### Integrated Plugins
 
