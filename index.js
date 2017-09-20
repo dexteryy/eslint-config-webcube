@@ -1,8 +1,13 @@
-/* eslint-disable import/exports-last, import/no-commonjs */
 const fs = require('fs');
+const path = require('path');
 const stripComments = require('strip-json-comments');
 
-const config = stripComments(fs.readFileSync('./.eslintrc.json', 'utf-8'));
+const configPath = path.join(
+  __dirname,
+  process.env.WEBCUBE_DISABLE_PRETTIER
+    ? '.eslintrc.config.json'
+    : '.eslintrc.prettier.json'
+);
+const config = stripComments(fs.readFileSync(configPath, 'utf-8'));
 
-exports.module = config;
-/* eslint-enable import/exports-last, import/no-commonjs */
+module.exports = JSON.parse(config);
