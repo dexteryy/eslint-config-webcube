@@ -1257,7 +1257,7 @@
     "react/no-multi-comp": [
       "error",
       {
-        "ignoreStateless": false
+        "ignoreStateless": true
       }
     ],
     // https://github.com/yannickcr/eslint-plugin-react/blob/HEAD/docs/rules/no-redundant-should-component-update.md
