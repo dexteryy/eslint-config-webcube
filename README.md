@@ -25,7 +25,6 @@ A sharable ESLint presets which explicitly configures all-available rules (guara
 * [eslint-plugin-filenames](https://www.npmjs.com/package/eslint-plugin-filenames)
 * [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 * [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)
-* [eslint-plugin-no-use-extend-native](https://www.npmjs.com/package/eslint-plugin-no-use-extend-native)
 
 ### For custom rules (WIP)
 

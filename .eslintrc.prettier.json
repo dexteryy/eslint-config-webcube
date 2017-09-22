@@ -5,6 +5,10 @@
     // https://www.npmjs.com/package/eslint-config-prettier
     // https://github.com/prettier/eslint-config-prettier/blob/master/index.js#L14
     "prettier",
+    // https://github.com/prettier/eslint-config-prettier/blob/master/flowtype.js
+    // @TODO
+    // "prettier/flowtype",
+    // https://github.com/prettier/eslint-config-prettier/blob/master/react.js
     "prettier/react"
   ],
   "rules": {
@@ -16,7 +20,7 @@
       {
         "code": 80,
         "tabWidth": 4,
-        "ignoreComments": false,
+        "ignoreComments": true,
         "ignoreTrailingComments": false,
         "ignoreUrls": true,
         "ignoreStrings": true,
@@ -35,6 +39,7 @@
       "error",
       "single",
       {
+        "avoidEscape": true,
         "allowTemplateLiterals": true
       }
     ]

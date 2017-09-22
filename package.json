@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webcube",
-  "version": "0.1.0-beta.9",
+  "version": "0.1.0-beta.10",
   "description": "A sharable ESLint presets which explicitly configures all-available rules (guaranteed by scripts) from ESLint and commonly used plugins.",
   "author": "dexteryy <dexter.yy@gmail.com>",
   "contributors": [],
@@ -18,6 +18,9 @@
     "package-lock.json",
     "README.md"
   ],
+  "engines": {
+    "node": ">=6.9.0"
+  },
   "scripts": {
     "precommit": "npm run check",
     "prepublish": "npm run check",
@@ -27,7 +30,7 @@
     "upgrade": "rm -rf ./node_modules package-lock.json && npm i"
   },
   "peerDependencies": {
-    "eslint": "^4.7.0"
+    "eslint": "^4.7.2"
   },
   "dependencies": {
     "babel-eslint": "^8.0.0",
@@ -37,9 +40,8 @@
     "eslint-plugin-eslint-comments": "^1.0.3",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-no-use-extend-native": "^0.3.12",
     "eslint-plugin-node": "^5.1.1",
-    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^7.3.0",
     "prettier": "^1.7.0",
@@ -47,7 +49,7 @@
   },
   "devDependencies": {
     "check-dependencies": "^1.1.0",
-    "eslint": "^4.7.0",
+    "eslint": "^4.7.2",
     "eslint-find-rules": "^3.1.1",
     "eslint-index": "^1.4.0",
     "husky": "^0.14.3"
