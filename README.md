@@ -1,3 +1,3 @@
-# eslint-config-webcube
 
-Migrated to [Project WebCube's monorepo](https://github.com/dexteryy/Project-WebCube/tree/master/eslint-config-webcube)
+
+# This project has been moved into [the WebCube Project mono-repo](https://github.com/dexteryy/Project-WebCube/tree/master/packages/eslint-config-webcube)
